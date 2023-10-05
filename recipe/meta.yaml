@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cbioportalR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cbioportalR/cbioportalR_{{ version }}.tar.gz
-  sha256: b79f1d44ea6e2fb9f23dc305eb2964ccc227bbdbc447aa0d738d70eee0fbee05
+  sha256: 256f550563f64c6d220261f84382f46038aeeb34241acdd927e24f27aed4286f
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
