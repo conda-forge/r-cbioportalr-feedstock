@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cbioportalR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cbioportalR/cbioportalR_{{ version }}.tar.gz
-  sha256: 256f550563f64c6d220261f84382f46038aeeb34241acdd927e24f27aed4286f
+  sha256: c02e849960d3d51d78ff85441d99256cd9e4d114f97a0dd9f0e4e9f01eb1a631
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
